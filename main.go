@@ -1,7 +1,9 @@
 package main
 
-import "github.com/nashmaniac/concurrency-in-go/building-blocks/goroutine"
+import (
+	"github.com/nashmaniac/concurrency-in-go/building-blocks/waitgroup"
+)
 
 func main() {
-	goroutine.TestMemorySpaceConsumption()
+	waitgroup.WaitGroupWithPassingReferences()
 }
