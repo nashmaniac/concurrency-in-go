@@ -1,9 +1,11 @@
 package main
 
 import (
-	"github.com/nashmaniac/concurrency-in-go/building-blocks/waitgroup"
+	"github.com/nashmaniac/concurrency-in-go/locks"
 )
 
 func main() {
-	waitgroup.WaitGroupWithPassingReferences()
+	// locks.BasicMutex()
+	// locks.BasicWithoutMutex()
+	locks.BenchMarkMutex()
 }
