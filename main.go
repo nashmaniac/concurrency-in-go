@@ -1,9 +1,12 @@
 package main
 
-import "github.com/nashmaniac/concurrency-in-go/building-blocks/locks"
+import (
+	"github.com/nashmaniac/concurrency-in-go/building-blocks/cond"
+)
 
 func main() {
 	// locks.BasicMutex()
 	// locks.BasicWithoutMutex()
-	locks.BenchMarkMutex()
+	// cond.BasicCond()
+	cond.BasicBroadcast()
 }
