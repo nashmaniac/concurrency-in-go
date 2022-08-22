@@ -44,6 +44,13 @@ func BasicBroadcast() {
 		fmt.Println("Maximizing button")
 	})
 
+	mainWg.Add(1)
+	subscribe(button.cond, func() {
+		defer mainWg.Done()
+		time.Sleep(1 * time.Second)
+		fmt.Println("Something is happening")
+	})
+
 	button.cond.Broadcast()
 
 	mainWg.Wait()

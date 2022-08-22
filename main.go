@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/nashmaniac/concurrency-in-go/building-blocks/once"
+	"github.com/nashmaniac/concurrency-in-go/building-blocks/pool"
 )
 
 func main() {
@@ -9,5 +9,7 @@ func main() {
 	// locks.BasicWithoutMutex()
 	// cond.BasicCond()
 	// cond.BasicBroadcast()
-	once.OnceTest()
+	// once.OnceTest()
+
+	pool.AdvancedPoolTest()
 }
