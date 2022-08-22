@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/nashmaniac/concurrency-in-go/building-blocks/pool"
+	"github.com/nashmaniac/concurrency-in-go/building-blocks/channels"
 )
 
 func main() {
@@ -11,5 +11,6 @@ func main() {
 	// cond.BasicBroadcast()
 	// once.OnceTest()
 
-	pool.AdvancedPoolTest()
+	// pool.AdvancedPoolTest()
+	channels.BufferedChannel()
 }
