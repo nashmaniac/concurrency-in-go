@@ -38,3 +38,19 @@
     - Composition of different channels
 
 ## Concurrency Patterns
+* Confinement
+    * Adhoc example
+    * Lexical example
+
+* For-select Statement
+    * for-select example
+
+* Goroutine Leaks
+    * Basic example
+    * From producer to consumer example
+    * From consumer to producer example
+
+* Or-Done channel
+    * Or channel
+
+* Error handling
