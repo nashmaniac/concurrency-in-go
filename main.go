@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/nashmaniac/concurrency-in-go/building-blocks/channels"
+	selectstatement "github.com/nashmaniac/concurrency-in-go/building-blocks/select-statement"
 )
 
 func main() {
@@ -12,5 +12,7 @@ func main() {
 	// once.OnceTest()
 
 	// pool.AdvancedPoolTest()
-	channels.BufferedChannel()
+	// channels.BufferedChannel()
+	// selectstatement.BasicChannelTest()
+	selectstatement.TestWork1()
 }
