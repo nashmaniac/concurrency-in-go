@@ -1,7 +1,7 @@
 package main
 
 import (
-	selectstatement "github.com/nashmaniac/concurrency-in-go/building-blocks/select-statement"
+	"github.com/nashmaniac/concurrency-in-go/concurrency-patterns/errorhandling"
 )
 
 func main() {
@@ -14,5 +14,6 @@ func main() {
 	// pool.AdvancedPoolTest()
 	// channels.BufferedChannel()
 	// selectstatement.BasicChannelTest()
-	selectstatement.TestWork1()
+	//
+	errorhandling.AdvancedErrorHandling()
 }
