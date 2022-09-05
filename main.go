@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/nashmaniac/concurrency-in-go/concurrency-patterns/pipelines/common"
+	fanin "github.com/nashmaniac/concurrency-in-go/concurrency-patterns/pipelines/fan-in"
 )
 
 func main() {
-	common.RepeatFunctiontPipeline()
+	fanin.AdvancedExample()
 }

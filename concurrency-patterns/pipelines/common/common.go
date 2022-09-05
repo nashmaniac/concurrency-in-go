@@ -50,3 +50,20 @@ func RepeatFunctionStage(done <-chan interface{}, fn func() interface{}) <-chan 
 	}()
 	return functionValueStream
 }
+
+func ToStringStage(done <-chan interface{}, values <-chan interface{}) <-chan string {
+	stringStream := make(chan string)
+
+	go func() {
+		defer close(stringStream)
+		for i := range values {
+			select {
+			case <-done:
+				return
+			case stringStream <- i.(string):
+			}
+		}
+	}()
+
+	return stringStream
+}
